@@ -52,13 +52,15 @@ header nav a:hover{
 }
 
 .top-img{
-    width: 100%;
-    padding: 0 22%;
-    
+    width: 100%;   
+}
+
+.top-img img{
+    margin-left: 10%;
 }
 
 nav{
-    padding-top: 20px;
+    padding: 20px 100px;
 }
 
 nav a{
