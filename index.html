@@ -8,16 +8,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arima&family=Blaka&family=Gentium+Book+Plus:wght@700&family=Nunito:wght@300&family=Pacifico&display=swap" rel="stylesheet">
-    <title>Nome Blog</title>
-    
-    <!--
-        F6BD60
-        F7EDE2
-        F5CAC3
-        84A59D
-        F28482  
-    
-    -->
+
+    <!-- Icones  -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+      <!-- CORES  -->
+    <style>
+        :root{
+            --color0: #F6BD60;
+            --color1: #F7EDE2;
+            --color2: #F5CAC3;
+            --color3: #84A59D;
+            --color4: #F28482;
+        }
+
+    </style>
+
+    <title>Delicias da Marcia</title>    
 </head>
 <body>
     <div id="title-main">
@@ -30,19 +39,25 @@
             <a href="">SOBRE</a>
         </nav>        
         <section class="social-icons">
-            <a href=""><img src="assets/img/facebook.png" alt=""></a>
-            <a href=""><img src="assets/img/instagram.png" alt=""></a>
-            <a href=""><img src="assets/img/pinterest.png" alt=""></a>             
+            <a href="https://www.facebook.com/marcia.hashimoto.92"><img src="assets/img/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/marcia_katsue/"><img src="assets/img/instagram.png" alt=""></a>
+            <a href="https://br.pinterest.com/katsuetaminato/_saved/"><img src="assets/img/pinterest.png" alt=""></a>
+            <select name="" id="theme">
+                <option value="1">Claro</option>
+                <option value="2">Escuro</option>
+            </select>          
         </section>
     </header>
     <div class="top-img">
         <img src="assets/img/original-2ad9e2a145ffa3240a8d687dc3197227-925x308.webp" alt="">
     </div>
     <nav>
-        <a href="">Prato Principal</a>
-        <a href="">Doces</a>
-        <a href="">Salgados</a>
+        <a href="#" onclick="pratoPrincipal()">Prato Principal</a>
+        <a href="#" onclick="doces()">Doces</a>
+        <a href="#" onclick="salgados()">Salgados</a>
     </nav>
+
+    <!-- HOME  -->
     <section id="principal-art">
         <article>
             <div class="body-img">
@@ -57,6 +72,15 @@
             </div>
             <h2>Bolo de chocolate</h2>
             <p>Delicioso bolo de chocolate, o clássico que nunca erra! Aprenda aqui essa receita maravilhosa.</p>
+            <div>
+                <div>
+                    <span class="material-icons">visibility</span>
+                    <span class="material-icons">chat_bubble_outline</span>
+                </div>
+                <div>
+                    <span class="material-icons">favorite_border</span>
+                </div>
+            </div>
         </article>
 
         <aside id="info">
@@ -65,11 +89,163 @@
             <p class="txtprofile">Mulher, brasileira, descendente de japoneses, mãe de três filhos humanos e quinze filhos de quatro patas. Sou dona de casa e inicialmente a minha rotina na cozinha começou através de uma obrigação porém se tornou interessante e prazeroso. Nesse blog compartilho com vocês minhas receitas feitas com muito amor.</p>
         </aside>
     </section>
+
+        <!-- PRATO PRINCIPAL  -->
+    <section id="pratoPrincipal" onload="foco()">
+        <article>
+            <div class="body-img">
+                <img src="assets/img/lasanhaBerinjela.jpeg" alt="">
+            </div>
+            <div class="profile">
+                <img src="assets/img/img-perfil/Sem título.png" alt="">
+                <div>
+                    <h4>Pitiko Tiko</h4>
+                    <span>08 de jun de 2022</span>
+                </div>
+            </div>
+            <h2>Lasanha de Berinjela</h2>
+            <p>Esse é o carro-chefe, incontestável Lasanha de Berinjela, o ápice da culinária de Marcia.</p>
+            <div>
+                <div>
+                    <span class="material-icons">visibility</span>
+                    <span class="material-icons">chat_bubble_outline</span>
+                </div>
+                <div>
+                    <span class="material-icons">favorite_border</span>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="body-img">
+                <img src="assets/img/bacalhau.jpg" alt="">
+            </div>
+            <div class="profile">
+                <img src="assets/img/img-perfil/luffy.png" alt="">
+                <div>
+                    <h4>Luffy</h4>
+                    <span>10 de jun de 2022</span>
+                </div>
+            </div>
+            <h2>Bacalhau</h2>
+            <p>Tão poderoso quanto a Lasanha, em datas comemorativas nunca falta o Bacalhau!</p>
+            <div>
+                <div>
+                    <span class="material-icons">visibility</span>
+                    <span class="material-icons">chat_bubble_outline</span>
+                </div>
+                <div>
+                    <span class="material-icons">favorite_border</span>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- DOCES  -->
+    <section id="doces">
+        <article>
+            <div class="body-img">
+                <img src="assets/img/pudim de geladeira.jpeg" alt="">
+            </div>
+            <div class="profile">
+                <img src="assets/img/foto_perfil_marcia.jpg" alt="">
+                <div>
+                    <h4>Marcia Kat</h4>
+                    <span>26 de jun de 2022</span>
+                </div>
+            </div>
+            <h2>Pudim de Geladeira</h2>
+            <p>Pudim de facil preparo, extremamente prático e mais importante, delicisoso!</p>
+            <div>
+                <div>
+                    <span class="material-icons">visibility</span>
+                    <span class="material-icons">chat_bubble_outline</span>
+                </div>
+                <div>
+                    <span class="material-icons">favorite_border</span>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="body-img">
+                <img src="assets/img/comida1 (4).jpeg" alt="">
+            </div>
+            <div class="profile">
+                <img src="assets/img/img-perfil/luffy.png" alt="">
+                <div>
+                    <h4>Luffy</h4>
+                    <span>17 de jun de 2022</span>
+                </div>
+            </div>
+            <h2>Torta de Limão</h2>
+            <p>Não pode faltar essa deliciosa torta de limão, simplesmente maravilhosa!</p>
+            <div>
+                <div>
+                    <span class="material-icons">visibility</span>
+                    <span class="material-icons">chat_bubble_outline</span>
+                </div>
+                <div>
+                    <span class="material-icons">favorite_border</span>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- SALGADOS  -->
+    <section id="salgados">
+        <article>
+            <div class="body-img">
+                <img src="assets/img/sushi.jpeg" alt="">
+            </div>
+            <div class="profile">
+                <img src="assets/img/img-perfil/Sem título.png" alt="">
+                <div>
+                    <h4>Pitiko Tiko</h4>
+                    <span>01 de jul de 2022</span>
+                </div>
+            </div>
+            <h2>Sushi</h2>
+            <p>Não poderia faltar o delicioso Sushi caseiro!</p>
+            <div>
+                <div>
+                    <span class="material-icons">visibility</span>
+                    <span class="material-icons">chat_bubble_outline</span>
+                </div>
+                <div>
+                    <span class="material-icons">favorite_border</span>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="body-img">
+                <img src="assets/img/yakisoba.jpeg" alt="">
+            </div>
+            <div class="profile">
+                <img src="assets/img/img-perfil/Sem título.png" alt="">
+                <div>
+                    <h4>Pitiko Tiko</h4>
+                    <span>20 de jun de 2022</span>
+                </div>
+            </div>
+            <h2>Yakisoba</h2>
+            <p>Yakisoba é sempre muito bem-vindo, uma delicia!</p>
+            <div>
+                <div>
+                    <span class="material-icons">visibility</span>
+                    <span class="material-icons">chat_bubble_outline</span>
+                </div>
+                <div>
+                    <span class="material-icons">favorite_border</span>
+                </div>
+            </div>
+        </article>
+    </section>
  
 
     <footer>
         © 2022 Delícias da Marcia.Todos os direitos reservados.
     </footer>
 
+
+    <script src="index.js"></script>
 </body>
 </html>

@@ -150,3 +150,15 @@ footer{
     font-family: 'Arima', cursive;
     font-weight: bold;
 }
+
+#pratoPrincipal{
+    display: none;
+}
+
+#doces{
+    display: none;
+}
+
+#salgados{
+    display: none;
+}
