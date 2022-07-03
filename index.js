@@ -8,11 +8,13 @@ var theme = document.getElementById('theme')
 theme.addEventListener('change', function(){
     
     if(theme.value == 1){
-        document.body.style.setProperty('', '')
-        document.body.style.setProperty('', '')
+        document.body.style.setProperty('--color5', '')
+        document.body.style.setProperty('--color1', '')
+        document.body.style.setProperty('--color0', '')
     }else{
-        document.body.style.setProperty('', '')
-        document.body.style.setProperty('', '')
+        document.body.style.setProperty('--color5', '#6D6875')
+        document.body.style.setProperty('--color1', '#B5838D')
+        document.body.style.setProperty('--color0', '#FFCDB2')
     }
 })
 

@@ -6,7 +6,8 @@
 
 body{
     width: 100%;
-    height: 3000px;
+    height: 2000px;
+    background-color: var(--color5);
 }
 
 header {
@@ -28,7 +29,7 @@ header nav a{
 }
 
 header nav a:hover{
-    color: #84A59D;
+    color: var(--color3);
 }
 
 #title-main{
@@ -50,6 +51,13 @@ header nav a:hover{
 .social-icons a img{
     width: 20px;
     height: 20px;
+}
+
+#theme{
+    border-radius: 10px;
+    font-size: 14pt;
+    text-align: center;
+    font-family: 'Arima', cursive;
 }
 
 .top-img{
@@ -74,7 +82,7 @@ nav a{
 }
 
 nav a:hover{
-    color: #84A59D;    
+    color: var(--color3);    
 }
 
 /* CORPO DO BLOG */
@@ -85,12 +93,12 @@ nav a:hover{
     margin-left: 12%;
 }
 #principal-art article{
-    background-color: #F7EDE2;
-    padding: 5px 10%; 
+    background-color: var(--color1);
+    padding: 20px 10%; 
     
 }
 #principal-art article .body-img img:hover{
-    box-shadow: 12px 12px 20px #F6BD60;
+    box-shadow: 12px 12px 20px var(--color0);
     cursor: pointer;
     transition: all 0.2s;
     
@@ -118,9 +126,9 @@ nav a:hover{
 
 /* PROFILE */
 #info{
-    padding: 5px 50px;
+    padding: 20px 50px;
     margin-left: 50px;
-    background-color: #F7EDE2;;
+    background-color: var(--color1);
 }
 #info img{
     width: 300px;
@@ -129,13 +137,151 @@ nav a:hover{
     
 }
 #info img:hover{
-    box-shadow: 12px 12px 20px #F6BD60;
+    box-shadow: 12px 12px 20px var(--color0);
     transition: all 0.2s;
     
 }
 #info h2, .txtprofile{
     font-family: 'Arima', cursive;
     text-align: center;
+}
+.like-icons{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(70, 69, 69);
+    padding-top: 10px;
+}
+.like-icons span{
+    cursor: pointer;
+}
+
+/* PRATO PRINCIPAL */
+#pratoPrincipal{
+    display: none;
+    width: 50%;
+    margin-left: 23%;    
+}
+
+#pratoPrincipal article{
+    background-color: var(--color1);
+    padding: 20px 120px; 
+    
+}
+#pratoPrincipal article .body-img img{
+    width: 622px;
+    height: 463px;
+}
+#pratoPrincipal article .body-img img:hover{
+    box-shadow: 12px 12px 20px var(--color0);
+    cursor: pointer;
+    transition: all 0.2s;
+    
+}
+#pratoPrincipal .profile{
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    padding: 20px 0;
+}
+#pratoPrincipal .profile img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+#pratoPrincipal .profile div{
+    display: flex;
+    flex-direction: column; 
+}
+
+#pratoPrincipal h2, p{
+    padding: 5px 0;
+    font-family: 'Arima', cursive;
+}
+
+/* DOCES */
+
+#doces{
+    display: none;
+    width: 50%;
+    margin-left: 23%;    
+}
+
+#doces article{
+    background-color: var(--color1);
+    padding: 20px 120px; 
+    
+}
+#doces article .body-img img{
+    width: 622px;
+    height: 463px;
+}
+#doces article .body-img img:hover{
+    box-shadow: 12px 12px 20px var(--color0);
+    cursor: pointer;
+    transition: all 0.2s;
+    
+}
+#doces .profile{
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    padding: 20px 0;
+}
+#doces .profile img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+#doces .profile div{
+    display: flex;
+    flex-direction: column; 
+}
+
+#doces h2, p{
+    padding: 5px 0;
+    font-family: 'Arima', cursive;
+}
+
+/* SALGADOS */
+
+#salgados{
+    display: none;
+    width: 50%;
+    margin-left: 23%;    
+}
+
+#salgados article{
+    background-color: var(--color1);
+    padding: 20px 120px; 
+    
+}
+#salgados article .body-img img{
+    width: 622px;
+    height: 463px;
+}
+#salgados article .body-img img:hover{
+    box-shadow: 12px 12px 20px var(--color0);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+#salgados .profile{
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    padding: 20px 0;
+}
+#salgados .profile img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+#salgados .profile div{
+    display: flex;
+    flex-direction: column; 
+}
+#salgados h2, p{
+    padding: 5px 0;
+    font-family: 'Arima', cursive;
 }
 
 /* FOOTER */
@@ -144,21 +290,14 @@ footer{
     margin-top: 10px;
     padding: 0;
     position: fixed;
-    bottom: 1px;
+    bottom: 0px;
     text-align: center;
-    background-color: #F6BD60;
+    background-color: var(--color0);
     font-family: 'Arima', cursive;
     font-weight: bold;
 }
 
-#pratoPrincipal{
-    display: none;
-}
 
-#doces{
-    display: none;
-}
 
-#salgados{
-    display: none;
-}
+
+
